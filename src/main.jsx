@@ -6,7 +6,7 @@ import { RouterProvider } from 'react-router/dom'
 import Layout from './components/Layout'
 import { createBrowserRouter } from 'react-router'
 import Homepage from './Homepage'
-import Friend from './components/Friend'
+
 import Details from './Details'
 import ContextProvider from './ContextProvider'
 import Timeline from './Timeline'
