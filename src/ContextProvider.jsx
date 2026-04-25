@@ -4,6 +4,7 @@ export const PersonContext = createContext();
 
 const ContextProvider = ({ children }) => {
     const [list , setList] = useState([]);
+    // const [actions  , setActions]
     const data = {
         list,
         setList,

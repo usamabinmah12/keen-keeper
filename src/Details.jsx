@@ -17,10 +17,16 @@ const Details = () => {
     const desired = data.find(curr_frnd => curr_frnd.id == frnd.id);
     // console.log(desired);
     const {list , setList} = useContext(PersonContext);
-    const handleClickedAdd = () => {
-        alert(`${desired.name} added to timeline`);
-        setList([...list , desired]);
-    }
+    const handleClickedAdd = (state) => {
+            alert(`${desired.name} added to timeline`);
+
+            const updated = {
+                    ...desired,
+                    state: state
+                };
+
+                setList([...list, updated]);
+    };
     return (
         <div className='container mx-auto'>
             <div className="card card-side bg-base-100 shadow-sm flex justify-between">
@@ -90,15 +96,15 @@ const Details = () => {
                         
                         <div className="">Quick Check-In</div>
                         <div className="grid grid-cols-3 gap-3 ">
-                            <div onClick={() => handleClickedAdd()} className="flex flex-col items-center border border-amber-200 p-3">
+                            <div onClick={() => handleClickedAdd( 'call')} className="flex flex-col items-center border border-amber-200 p-3">
                                 <img src={img1} alt="" />
                                 <p className='text-3xl m-2'>Call</p>
                             </div>
-                            <div onClick={() => handleClickedAdd()} className="flex flex-col items-center border border-amber-200 p-3">
+                            <div onClick={() => handleClickedAdd( 'text')} className="flex flex-col items-center border border-amber-200 p-3">
                                 <img src={img2} alt="" />
                                 <p className='text-3xl m-2'>Text</p>
                             </div>
-                            <div onClick={() => handleClickedAdd()} className="flex flex-col items-center border border-amber-200 p-3">
+                            <div onClick={() => handleClickedAdd('video')} className="flex flex-col items-center border border-amber-200 p-3">
                                 <img src={img3} alt="" />
                                 <p className='text-3xl m-2'>Video</p>
                             </div>
