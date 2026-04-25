@@ -8,6 +8,7 @@ import img1 from "../assets/call.png"
 import img2 from "../assets/text.png"
 import img3 from "../assets/video.png"
 import { PersonContext } from './ContextProvider';
+import { toast } from 'react-toastify';
 
 const Details = () => {
     const frnd = useParams();
@@ -18,7 +19,7 @@ const Details = () => {
     // console.log(desired);
     const {list , setList} = useContext(PersonContext);
     const handleClickedAdd = (state) => {
-            alert(`${desired.name} added to timeline`);
+            toast.success(`${state} with ${desired.name}  `);
 
             const updated = {
                     ...desired,
