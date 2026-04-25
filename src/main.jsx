@@ -11,6 +11,8 @@ import Details from './Details'
 import ContextProvider from './ContextProvider'
 import Timeline from './Timeline'
 import { ToastContainer } from 'react-toastify'
+import Stat from './Stat'
+import Error from './Error'
 
 const router = createBrowserRouter([
   {
@@ -33,12 +35,13 @@ const router = createBrowserRouter([
       },
       
       {
-        path : "/stats",
-        element : "This is stat"
+        path : "/stat",
+        element : <Stat></Stat>,
       }
      
 
-    ]
+    ],
+    errorElement: <Error></Error>
   }
 ])
 

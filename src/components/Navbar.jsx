@@ -3,12 +3,13 @@ import { IoTimeOutline } from 'react-icons/io5';
 import { MdHome } from 'react-icons/md';
 import { TfiStatsUp } from 'react-icons/tfi';
 import {Link, NavLink } from 'react-router';
+import  img from "../../assets/logo.png";
 
 const Navbar = () => {
     return (
         <div className='flex justify-between container mx-auto my-5'>
             <div className="font-bold  ">
-                Keen<span className='text-red-400'>Keeper</span>
+            <img src={img} alt="" />
             </div>
             
             <div className="flex justify-center items-center gap-1.5">
@@ -18,7 +19,7 @@ const Navbar = () => {
                <NavLink to={"/timeline"}  className={({isActive}) =>   `p-1.5 flex items-center gap-1 rounded-[10px] ${isActive ? "bg-amber-300" : ""}`}>
                <IoTimeOutline/> Timeline
                </NavLink>
-               <NavLink to={"/stats"}  className={({isActive}) =>   `p-1.5 flex items-center gap-1 rounded-[10px] ${isActive ? "bg-amber-300" : ""}`}>
+               <NavLink to={"/stat"}  className={({isActive}) =>   `p-1.5 flex items-center gap-1 rounded-[10px] ${isActive ? "bg-amber-300" : ""}`}>
                <TfiStatsUp/> Stats
                </NavLink>
                

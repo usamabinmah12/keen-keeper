@@ -17,7 +17,7 @@ const Details = () => {
     //console.log(data);
     const desired = data.find(curr_frnd => curr_frnd.id == frnd.id);
     // console.log(desired);
-    const {list , setList} = useContext(PersonContext);
+    const {list , setList ,t , setT , c , setC , v, setV} = useContext(PersonContext);
     const handleClickedAdd = (state) => {
             toast.success(`${state} with ${desired.name}  `);
 
@@ -25,6 +25,13 @@ const Details = () => {
                     ...desired,
                     state: state
                 };
+                if(state ==  "call") {
+                    setC(c + 1);
+                }
+                else if(state == "text") {
+                    setT(t + 1);
+                }
+                else setV(v + 1);
 
                 setList([...list, updated]);
     };
