@@ -14,27 +14,33 @@ const Stat = () => {
     const isEmpty = t === 0 && c === 0 && v === 0;
 
     return (
-        <div style={{ width: '100%', height: 400 }}>
+        <div className="w-full h-[400px]">
             {isEmpty ? (
                 <p className="text-center mt-10 text-gray-500">
                     No stats available yet 📊
                 </p>
             ) : (
-                <ResponsiveContainer>
-                    <PieChart>
-                        <Pie
-                            data={data}
-                            innerRadius={80}
-                            outerRadius={120}
-                            cornerRadius={10}
-                            paddingAngle={5}
-                            dataKey="value"
-                            isAnimationActive={true}
-                        />
-                        <Legend />
-                        <Tooltip />
-                    </PieChart>
-                </ResponsiveContainer>
+                <div className="h-full flex flex-col items-center">
+                    <h2 className="text-3xl text-center mb-4">
+                        Friendship Analytics
+                    </h2>
+
+                    <ResponsiveContainer width="100%" height="100%">
+                        <PieChart>
+                            <Pie
+                                data={data}
+                                innerRadius={80}
+                                outerRadius={120}
+                                cornerRadius={10}
+                                paddingAngle={5}
+                                dataKey="value"
+                                isAnimationActive={true}
+                            />
+                            <Legend />
+                            <Tooltip />
+                        </PieChart>
+                    </ResponsiveContainer>
+                </div>
             )}
         </div>
     );
