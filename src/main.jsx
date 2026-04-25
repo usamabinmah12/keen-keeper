@@ -5,6 +5,9 @@ import Navbar from './components/Navbar'
 import { RouterProvider } from 'react-router/dom'
 import Layout from './components/Layout'
 import { createBrowserRouter } from 'react-router'
+import Homepage from './Homepage'
+import Friend from './components/Friend'
+import Details from './Details'
 
 const router = createBrowserRouter([
   {
@@ -13,12 +16,19 @@ const router = createBrowserRouter([
     children : [
       {
          index :true,
-         element : <h2>This home</h2>,
+         element : <Homepage></Homepage>,
+         loader : () => fetch("/data.json"),
+      },
+      {
+        path : "/details/:id",
+        element: <Details></Details>,
+        loader : () => fetch("/data.json"),
       },
       {
         path:"/timeline",
         element : "this  is timeline",
       },
+      
       {
         path : "/stats",
         element : "This is stat"

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Ayesha Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "ayesha.rahman@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["university", "project partner"],
+    "bio": "Studied CSE together at Metropolitan University. We often collaborated on assignments and still discuss coding problems.",
+    "goal": 14,
+    "next_due_date": "2026-05-01"
+  },
+  {
+    "id": 2,
+    "name": "Mahin Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "mahin.ahmed@yahoo.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["school", "football"],
+    "bio": "School friend and football teammate. Used to play regularly during weekends.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 3,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["family", "cousin"],
+    "bio": "Cousin who lives in Dhaka. We keep in touch regularly through calls and family events.",
+    "goal": 14,
+    "next_due_date": "2026-05-10"
+  },
+  {
+    "id": 4,
+    "name": "Tanvir Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/41.jpg",
+    "email": "tanvir.hasan@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["university", "roommate"],
+    "bio": "Former roommate at university hostel. Shared many late-night study sessions and coding practice.",
+    "goal": 14,
+    "next_due_date": "2026-04-27"
+  },
+  {
+    "id": 5,
+    "name": "Sadia Islam",
+    "picture": "https://randomuser.me/api/portraits/women/22.jpg",
+    "email": "sadia.islam@gmail.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["internship", "colleague"],
+    "bio": "Worked together during a software development internship. She specializes in frontend development.",
+    "goal": 14,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 6,
+    "name": "Rakib Chowdhury",
+    "picture": "https://randomuser.me/api/portraits/men/55.jpg",
+    "email": "rakib.chowdhury@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["gym", "fitness"],
+    "bio": "Gym partner who motivates me to stay consistent with workouts and healthy habits.",
+    "goal": 14,
+    "next_due_date": "2026-05-12"
+  },
+  {
+    "id": 7,
+    "name": "Farhana Kabir",
+    "picture": "https://randomuser.me/api/portraits/women/18.jpg",
+    "email": "farhana.kabir@gmail.com",
+    "days_since_contact": 14,
+    "status": "almost due",
+    "tags": ["debate club", "friend"],
+    "bio": "Met through university debate club. We enjoy discussing social and political topics.",
+    "goal": 14,
+    "next_due_date": "2026-04-26"
+  },
+  {
+    "id": 8,
+    "name": "Imran Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "imran.hossain@gmail.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["neighbor", "childhood friend"],
+    "bio": "Grew up in the same neighborhood. We used to play cricket together every evening.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 9,
+    "name": "Sharmeen Akter",
+    "picture": "https://randomuser.me/api/portraits/women/36.jpg",
+    "email": "sharmeen.akter@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["online friend", "tech"],
+    "bio": "Connected through an online coding community. We exchange ideas about algorithms and problem-solving.",
+    "goal": 14,
+    "next_due_date": "2026-05-08"
+  },
+  {
+    "id": 10,
+    "name": "Sabbir Khan",
+    "picture": "https://randomuser.me/api/portraits/men/28.jpg",
+    "email": "sabbir.khan@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["university", "lab partner"],
+    "bio": "Lab partner for multiple courses. We worked on database and networking projects together.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  }
+]
