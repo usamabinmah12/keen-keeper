@@ -19,7 +19,7 @@ const Stat = () => {
                 Statistics
             </div>
             {isEmpty ? (
-                <p className="text-center mt-10 text-gray-500 text-3xl">
+                <p className="text-center mt-10 text-gray-500">
                     No stats available yet 
                 </p>
             ) : (
