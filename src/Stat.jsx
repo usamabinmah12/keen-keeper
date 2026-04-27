@@ -15,8 +15,11 @@ const Stat = () => {
 
     return (
         <div className="w-full h-[400px]">
+            <div className="container mx-auto font-bold text-3xl">
+                Statistics
+            </div>
             {isEmpty ? (
-                <p className="text-center mt-10 text-gray-500">
+                <p className="text-center mt-10 text-gray-500 text-3xl">
                     No stats available yet 
                 </p>
             ) : (

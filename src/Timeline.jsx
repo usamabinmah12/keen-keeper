@@ -64,7 +64,7 @@ const Timeline = () => {
                         <Per key={per.id} per={per} />
                     ))
                 ) : (
-                    <p className="text-center text-gray-500 mt-5">
+                    <p className="text-center text-gray-500 mt-5 text-3xl">
                         No {filter !== 'all' ? filter : ''} timeline data available 
                     </p>
                 )
