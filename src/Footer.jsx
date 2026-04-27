@@ -2,7 +2,7 @@ import React from 'react';
 import img from '../assets/logo.png'
 const Footer = () => {
     return (
-        <div>
+        <div className='container mx-auto'>
             <footer className="footer footer-horizontal footer-center bg-green-600 text-primary-content p-10">
                 <aside>
                     
