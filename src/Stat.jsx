@@ -17,7 +17,7 @@ const Stat = () => {
         <div className="w-full h-[400px]">
             {isEmpty ? (
                 <p className="text-center mt-10 text-gray-500">
-                    No stats available yet 📊
+                    No stats available yet 
                 </p>
             ) : (
                 <div className="h-full flex flex-col items-center">
