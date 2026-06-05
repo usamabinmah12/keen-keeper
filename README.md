@@ -26,6 +26,28 @@ Quickly connect with friends using integrated call, text, and video interaction 
 ### 📊 Data Visualization
 
 Visualize friend-related data through interactive pie charts for better insights and analysis.
+## 📦 Dependencies Used
+
+```bash
+react
+react-dom
+react-router-dom
+tailwindcss
+recharts
+
+
+## How to Run Locally
+# Clone the repository
+git clone https://github.com/your-username/keen-keeper.git
+
+# Navigate to project folder
+cd keen-keeper
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
 
 ## 🎯 Purpose
 
